@@ -1,0 +1,119 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  height: 100vh;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-box {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(15px);
+  border-radius: 20px;
+  padding: 40px;
+  width: 350px;
+  text-align: center;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+}
+
+.profile-pic {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid rgba(255, 255, 255, 0.6);
+  margin-bottom: 15px;
+}
+
+h2 {
+  color: white;
+  margin-bottom: 20px;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+}
+
+input::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+  margin-bottom: 15px;
+  color: white;
+}
+
+.options a {
+  color: lch(1.31% 5.5 338.13);
+  text-decoration: none;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background: hsl(319, 77%, 66%);
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.signup {
+  margin-top: 15px;
+  color: white;
+}
+
+.signup a {
+  color: #00ffcc;
+  text-decoration: none;
+}
+
+.footer-credit {
+  font-size: 12px;
+  margin-top: 10px;
+  color: rgba(255, 255, 255, 0.5);
+}
+button {
+    background-color: hsl(330, 70%, 58%); /* normal state */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+
+button:hover {
+    background-color: hsl(330, 81%, 65%); /* darker green */
+    transform: translateY(-2px); /* small lift effect */
+}
+
+
+button:active {
+    transform: translateY(0);
+}
